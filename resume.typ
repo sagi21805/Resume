@@ -205,22 +205,20 @@
 
 == Profile
 
-Software Engineer with 4+ years of experience in creating and maintaining custom open source projects. Proficient in Rust and Python with hands on experience on developing low level software like drivers and operating systems.
-
-Passionate about writing clean and optimized code, learning new things, and understanding complex problems to their core.
+Software Engineer with 4+ years of experience building and maintaining open source projects, specializing in low level programming (drivers, OS) in Rust and infrastructure automation in Python.
 
 == Experience
 #work(
   title: "Storage & Virtualization Engineer",
   location: "Rishon Lezion, Israel",
   company: "IDF - Genesis",
-  dates: dates-helper(start-date: "Mar 2024", end-date: "Feb 2027"),
+  dates: dates-helper(start-date: "Mar 2024", end-date: "Present"),
 )
 
-- Developed custom software for Dell Isilon to allow data retention with custom logic provided as external Python code.
-- Developed infrastructure automations for both Dell Isilon and ECS as well as VMware vSphere and ESXi.
+- Developed custom tooling for Dell Isilon enabling data retention via external Python code.
+- Built infrastructure automation for Dell Isilon, ECS, VMware vSphere, and ESXi.
 - Maintained 15+ virtualization and storage clusters.
-- Architected load balancing solution for a massive S3 storage system.
+- Architected a load balancing solution for a massive S3 storage system.
 
 #work(
   title: "Junior Software Engineer",
@@ -229,7 +227,7 @@ Passionate about writing clean and optimized code, learning new things, and unde
   dates: dates-helper(start-date: "Jun 2023", end-date: "Nov 2023"),
 )
 
-- Developed custom Python image processing software to measure 3D prints dimensions from a microscope image, drastically improving feedback time.
+- Built Python image processing software to measure 3D print dimensions from microscope images, drastically improving feedback time.
 
 #work(
   title: "FRC Team Member & Captain",
@@ -238,8 +236,8 @@ Passionate about writing clean and optimized code, learning new things, and unde
   dates: dates-helper(start-date: "Jul 2020", end-date: "Mar 2023"),
 )
 
-- Gained experience in electronics, and mechanics while building robots that could shoot a ball into a basket, or put a cone on a pole.
-- On my senior year, I was the team captain leading the team to the world championship competition in Huston Texas, after 6 year since the last time.
+- Built FRC competition robots, gaining hands-on experience in electronics and mechanics.
+- Team captain in senior year. Led the team to the World Championship in Houston Texas. Its second qualification in 9 years.
 
 == Projects
 #project(
@@ -247,39 +245,34 @@ Passionate about writing clean and optimized code, learning new things, and unde
   url: "github.com/sagi21805/LearnixOS",
 )
 
-Created a custom operating system from scratch in Rust for x86_64 CPU. This operating system has a functional booting into long mode, printing to screen using VGA, memory allocation for pages using Buddy allocation and object allocation using Slab allocation, hardware interrupts using the PIC8259, a working keyboard driver, synchronization primitives like RwLock and Mutex, and an on development AHCI disk driver.
+Custom x86_64 operating system in Rust featuring long mode boot, VGA display, Buddy/Slab memory allocation, PIC8259 interrupts, keyboard driver, RwLock/Mutex synchronization primitives, and an in development AHCI disk driver.
 
-As of the 1st of July 2026, this repository has 269 stars of GitHub.
+265+ GitHub stars. Reached top 10 on Hacker News twice.
 
 #project(
   name: "LearnixOS book",
   url: "learnix-os.com",
 )
 
-Created a book with custom syntax highlighting explaining step by step the development of the Learnix Operating System and advanced Rust topics like custom Rust compilation targets, and Procedural Macros. Created this book because there was no good source about OS development in Rust, so I decided to create one.
+Wrote a step by step book on building OS in Rust while also explaining advanced Rust topics like custom compilation targets, procedural macros. Filling a gap in Rust OSdev resources. Built a custom #link("https://github.com/sagi21805/mdbook-rust-analyzer-highlight")[syntax highlighter] to include highlighted code directly from the source code.
 
 #project(
   name: "Tracker",
   url: "github.com/sagi21805/tracker",
 )
 
-Created custom tracker that follows FRC robots during a match record for automatic analytics on robot performance during the match. The robot recognition was done using custom YOLO model, and the tracking and following was done with custom logic that could predict future robot locations, and fixing errors due to imperfect detection model.
+Built a tracker that follows FRC robots during matches for automated analytics, using a custom YOLO model for detection and custom logic to predict robot future positions while handling detection errors on the model.
 
 #project(
   name: "Matmul NPU",
   url: "github.com/sagi21805/matmul-npu",
 )
 
-Created a driver that uses the internal function on the Neural Processing Unit that is on the RK3588 chip to create fast matrix multiplication using hardware.
-
-As of the time of writing, this repository has 17 stars on GitHub.
-
-#project(
-  name: "mdbook-rust-analyzer-highlight",
-  url: "github.com/sagi21805/mdbook-rust-analyzer-highlight",
-)
-
-Custom syntax highlighter for the LearnixOS book that uses Rust Analyzer to process a project, and then gives the ability to include items from the project files like functions, impl blocks,  structs and more.
+Driver written in C++ using the RK3588 NPU's builtin matrix multiplication unit to accelerate matrix multiplication in hardware, bypassing the CPU/GPU.  17 GitHub stars.
 
 == Skills
-- Programming Languages - Rust, Python, Bash, C/C++
+- *Languages:* Rust, Python, Bash, C/C++
+- *Systems & Low-Level:* OS development, custom memory allocators (Buddy/Slab), interrupt handling, disk drivers (AHCI), synchronization primitives
+- *Networking:* Networking protocols such as HTTP/S, TCP, UDP, Ethernet etc.
+- *Infrastructure & Virtualization:* VMware vSphere/ESXi, Dell Isilon, Dell ECS, S3, infrastructure automation
+- *ML/CV:* YOLO  object detection, custom model training
