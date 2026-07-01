@@ -205,6 +205,9 @@
 
 == Profile
 
+Software Engineer with 4+ years of experience in creating and maintaining custom open source projects. Proficient in Rust and Python with hands on experience on developing low level software like drivers and operating systems.
+
+Passionate about writing clean and optimized code, learning new things, and understanding complex problems to their core.
 
 == Experience
 #work(
@@ -214,10 +217,10 @@
   dates: dates-helper(start-date: "Mar 2024", end-date: "Feb 2027"),
 )
 
-- Developed custom software for Dell Isilon to allow data retention with custom logic provided as Python code.
+- Developed custom software for Dell Isilon to allow data retention with custom logic provided as external Python code.
 - Developed infrastructure automations for both Dell Isilon and ECS as well as VMware vSphere and ESXi.
 - Maintained 15+ virtualization and storage clusters.
-- Architected load balancing solutions for a massive S3 storage system.
+- Architected load balancing solution for a massive S3 storage system.
 
 #work(
   title: "Junior Software Engineer",
@@ -229,40 +232,54 @@
 - Developed custom Python image processing software to measure 3D prints dimensions from a microscope image, drastically improving feedback time.
 
 #work(
-  title: "Frc Team Member & Captain",
+  title: "FRC Team Member & Captain",
   location: "Ness Ziona, Israel",
   company: "Demacia 5635",
   dates: dates-helper(start-date: "Jul 2020", end-date: "Mar 2023"),
 )
 
-- Gained experience in electronics,
-- On my last year, I was the team captain. In this year the group has appealed to the worlds championship after 6 year since the last time.
+- Gained experience in electronics, and mechanics while building robots that could shoot a ball into a basket, or put a cone on a pole.
+- On my senior year, I was the team captain leading the team to the world championship competition in Huston Texas, after 6 year since the last time.
 
 == Projects
 #project(
   name: "LearnixOS",
   url: "github.com/sagi21805/LearnixOS",
-  site: "learnix-os.com",
 )
 
+Created a custom operating system from scratch in Rust for x86_64 CPU. This operating system has a functional booting into long mode, printing to screen using VGA, memory allocation for pages using Buddy allocation and object allocation using Slab allocation, hardware interrupts using the PIC8259, a working keyboard driver, synchronization primitives like RwLock and Mutex, and an on development AHCI disk driver.
 
+As of the 1st of July 2026, this repository has 269 stars of GitHub.
+
+#project(
+  name: "LearnixOS book",
+  url: "learnix-os.com",
+)
+
+Created a book with custom syntax highlighting explaining step by step the development of the Learnix Operating System and advanced Rust topics like custom Rust compilation targets, and Procedural Macros. Created this book because there was no good source about OS development in Rust, so I decided to create one.
 
 #project(
   name: "Tracker",
   url: "github.com/sagi21805/tracker",
 )
 
-
+Created custom tracker that follows FRC robots during a match record for automatic analytics on robot performance during the match. The robot recognition was done using custom YOLO model, and the tracking and following was done with custom logic that could predict future robot locations, and fixing errors due to imperfect detection model.
 
 #project(
   name: "Matmul NPU",
   url: "github.com/sagi21805/matmul-npu",
 )
 
+Created a driver that uses the internal function on the Neural Processing Unit that is on the RK3588 chip to create fast matrix multiplication using hardware.
+
+As of the time of writing, this repository has 17 stars on GitHub.
+
 #project(
-  name: "Mdbook-rust-analyzer-highlight",
+  name: "mdbook-rust-analyzer-highlight",
   url: "github.com/sagi21805/mdbook-rust-analyzer-highlight",
 )
+
+Custom syntax highlighter for the LearnixOS book that uses Rust Analyzer to process a project, and then gives the ability to include items from the project files like functions, impl blocks,  structs and more.
 
 == Skills
 - Programming Languages - Rust, Python, Bash, C/C++
